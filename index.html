@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>ROT13 Algorithm</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- top -->
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div>
+            <h2 class="inline">Rotate by 13 Places Algorithm</h2>
+            <a href="https://en.wikipedia.org/wiki/ROT13" target="_blank" id="question-container" class="inline"><i id="question" class="fa fa-question-circle" title="About ROT13"></i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- input -->
+      <div id="input-container" class="row text-center">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control" id="string-input" placeholder="Enter a sting for ROT13 encoding/decoding...">
+          </div>
+          <button type="button" class="btn btn-default" onclick="validatInput()">Run</button>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <!-- result -->
+      <div id="result-container" class="row text-center">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p><b>The result of your string is:</b></p>
+          <p id="result"></p>
+          <button type="button" class="btn btn-default" onclick="reset()">Try Another String</button>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
