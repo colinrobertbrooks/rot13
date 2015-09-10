@@ -1,5 +1,6 @@
 //document ready functions
 $( document ).ready(function() {
+  //set default string
   $('#string-input').val('fraq hf gur pbqr lbh hfrq gb qrpbqr guvf zrffntr');
 });
 
