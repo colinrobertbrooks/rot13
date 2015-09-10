@@ -6,9 +6,9 @@ $( document ).ready(function() {
 
 
 //input and reset functions
-function validatInput () {
-    var input =$('#string-input').val();
-    if ($.trim(input).length==0) {
+function validateInput () {
+    var input = $('#string-input').val();
+    if ($.trim(input).length == 0) {
       alert('Please supply a string!');
     } else {
       if( /^[a-z ]*$/i.test( input )) {
