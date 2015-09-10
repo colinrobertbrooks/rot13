@@ -8,10 +8,14 @@ $( document ).ready(function() {
 //input and reset functions
 function validatInput () {
     var input =$('#string-input').val();
-    if( /^[a-z ]*$/i.test( input )) {
-      rot13();
+    if ($.trim(input).length==0) {
+      alert('Please supply a string!');
     } else {
-      alert('Please limit your string to letters and spaces!');
+      if( /^[a-z ]*$/i.test( input )) {
+        rot13();
+      } else {
+        alert('Please limit your string to letters and spaces!');
+      }
     }
  }
 
